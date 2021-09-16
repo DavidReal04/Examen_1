@@ -60,10 +60,12 @@ document.getElementById("search-button").onclick = function () {
 						}else{
 							example = key.example;
 						}
+						let div = document.createElement("div");
 						label = document.createElement("label");
 						label.setAttribute("id", "ex-"+numDefs)
 						label.innerHTML = numDefs+". "+ example;
-						document.getElementById("ex-col").appendChild(label);
+						div.appendChild(label);
+						document.getElementById("ex-col").appendChild(div);
 						
 					});
 				});
